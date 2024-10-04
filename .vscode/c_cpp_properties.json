@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-O2",
+                "-static",
+                "-march=native",
+                "-fno-strict-aliasing",
+                "-Wall",
+                "-fdiagnostics-color=always"
+            ]
+        }
+    ],
+    "version": 4
+}
