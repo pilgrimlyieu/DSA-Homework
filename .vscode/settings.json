@@ -4,6 +4,8 @@
         "*.hsnips": "hsnips",
         "*.json": "jsonl",
         "random": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "type_traits": "cpp",
+        "iosfwd": "cpp"
     }
 }

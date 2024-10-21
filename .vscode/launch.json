@@ -9,6 +9,23 @@
       "args": [],
       "cwd": "${fileDirname}",
       "preLaunchTask": "Build"
+    },
+    {
+      "name": "GDB Debug", 
+      "type": "cppdbg", 
+      "request": "launch", 
+      "program": "${fileDirname}/bin/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "Build", 
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
