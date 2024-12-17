@@ -3,16 +3,15 @@
         {
             "type": "cppbuild",
             "label": "Build",
-            "command": "/usr/bin/g++",
+            "command": "D:/Software/mingw64/bin/clang++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-static",
-                "-march=native",
-                // "-fsanitize=address",
-                // "-fsanitize=undefined",
-                // "-fsanitize=leak",
-                // "-fsanitize=memory",
-                // "-fsanitize=thread",
+                // "-static",
+                // "-lstdc++",
+                // "-lpthread",
+                // "-static-libgcc",
+                // "-static-libstdc++",
+                // "-march=native",
                 "-fno-strict-aliasing",
                 "-fno-omit-frame-pointer",
                 "-ftrapv",
@@ -20,20 +19,13 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/bin/${fileBasenameNoExtension}"
+                "${workspaceFolder}/bin/${relativeFileDirname}-${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
+                "cwd": "${workspaceFolder}"
             },
             "detail": "调试器生成的任务。"
-        }
+        },
     ],
     "version": "2.0.0"
 }

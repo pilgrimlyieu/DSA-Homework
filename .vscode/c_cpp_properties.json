@@ -1,18 +1,22 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/g++",
+            "compilerPath": "D:/Software/mingw64/bin/clang++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "linux-gcc-x64",
+            "intelliSenseMode": "windows-clang-x64",
             "compilerArgs": [
                 "-O2",
                 "-static",
+                "-lstdc++",
+                "-lpthread",
+                "-static-libgcc",
+                "-static-libstdc++",
                 "-march=native",
                 "-fno-strict-aliasing",
                 "-Wall",

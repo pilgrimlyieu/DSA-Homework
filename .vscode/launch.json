@@ -5,18 +5,18 @@
       "name": "LLDB Debug",
       "type": "lldb",
       "request": "launch",
-      "program": "${fileDirname}/bin/${fileBasenameNoExtension}",
+      "program": "${workspaceFolder}/bin/${relativeFileDirname}-${fileBasenameNoExtension}.exe",
       "args": [],
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "preLaunchTask": "Build"
     },
     {
       "name": "GDB Debug", 
       "type": "cppdbg", 
       "request": "launch", 
-      "program": "${fileDirname}/bin/${fileBasenameNoExtension}",
+      "program": "${workspaceFolder}/bin/${relativeFileDirname}-${fileBasenameNoExtension}.exe",
       "args": [],
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "preLaunchTask": "Build", 
       "MIMode": "gdb",
       "setupCommands": [
