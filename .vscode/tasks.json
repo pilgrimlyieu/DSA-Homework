@@ -1,7 +1,7 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
+            "type": "shell",
             "label": "Build",
             "command": "D:/Software/mingw64/bin/clang++.exe",
             "args": [
