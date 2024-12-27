@@ -9,7 +9,7 @@ struct child {
     int score;
     int candy;
     child(int i, int s, int c) : id(i), score(s), candy(c) {}
-    bool operator<(const child &c) {
+    bool operator<(const child &c) const {
         return score < c.score;
     }
 };
