@@ -3,7 +3,7 @@
         {
             "type": "shell",
             "label": "Build",
-            "command": "D:/Software/mingw64/bin/clang++.exe",
+            "command": "D:/Software/msys64/clang64/bin/clang++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 // "-static",
@@ -12,6 +12,7 @@
                 // "-static-libgcc",
                 // "-static-libstdc++",
                 // "-march=native",
+                // "-fsanitize=address",
                 "-fno-strict-aliasing",
                 "-fno-omit-frame-pointer",
                 "-ftrapv",
